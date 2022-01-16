@@ -1,6 +1,6 @@
 # Asset Price Tracker
 
-Time spent: ~2h
+Time spent: `~2h`
 
 ## Versions
 
