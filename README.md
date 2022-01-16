@@ -19,6 +19,7 @@ RxJS: `v6.6.0`
 - Usage of RxJS
 - Saving/Restoring state via query params
 - Accessibility
+- Responsive Design
 
 ## Q&A
 

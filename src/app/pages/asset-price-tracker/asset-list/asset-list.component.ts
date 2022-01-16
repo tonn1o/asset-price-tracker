@@ -8,4 +8,8 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class AssetListComponent {
   @Input() isinList: string[] = [];
   @Output() removeAsset = new EventEmitter<string>();
+
+  trackByIsin(idx: number, isin: string): string {
+    return isin;
+  }
 }

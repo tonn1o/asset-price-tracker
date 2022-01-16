@@ -1,6 +1,6 @@
 <ul *ngIf="isinList.length; else empty" aria-label="tracked ISIN list">
   <app-asset-list-item
-    *ngFor="let isin of isinList"
+    *ngFor="let isin of isinList; trackBy: trackByIsin"
     [isin]="isin"
     (remove)="removeAsset.emit(isin)"
   ></app-asset-list-item>
