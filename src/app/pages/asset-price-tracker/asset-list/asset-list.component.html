@@ -1,0 +1,12 @@
+<ul *ngIf="isinList.length; else empty" aria-label="tracked ISIN list">
+  <app-asset-list-item
+    *ngFor="let isin of isinList"
+    [isin]="isin"
+    (remove)="removeAsset.emit(isin)"
+  ></app-asset-list-item>
+</ul>
+<ng-template #empty>
+  <div class="empty">
+    No tracked items
+  </div>
+</ng-template>

@@ -1,0 +1,4 @@
+<div class="wrapper">
+  <app-add-asset-form (isinAdd)="trackStockPrice($event)"></app-add-asset-form>
+  <app-asset-list [isinList]="trackedAssets" (removeAsset)="removeAsset($event)"></app-asset-list>
+</div>

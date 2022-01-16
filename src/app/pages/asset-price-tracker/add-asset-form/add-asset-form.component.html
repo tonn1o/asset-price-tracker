@@ -1,0 +1,12 @@
+<form [formGroup]="form" class="form">
+  <input
+    class="isin-field"
+    [formControl]="controls.isin"
+    placeholder="Enter ISIN number"
+    type="text"
+    name="isin"
+    aria-label="add ISIN to track list"
+    aria-required="true"
+  />
+  <app-icon-button class="add-button" [icon]="faPlus" ariaLabel="add ISIN" (buttonClick)="addIsin()"></app-icon-button>
+</form>

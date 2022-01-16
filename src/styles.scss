@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+// override input styles
+input {
+  border: none;
+  background-image: none;
+  background-color: rgba(38, 49, 60, 0.05);
+  box-shadow: none;
+  padding: 12px;
+  height: 40px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    outline: none;
+    background-color: rgba(38, 49, 60, 0.08);
+  }
+}
+

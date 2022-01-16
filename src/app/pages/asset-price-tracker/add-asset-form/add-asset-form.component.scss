@@ -1,0 +1,22 @@
+:host {
+  width: 100%;
+
+  .form {
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    .isin-field {
+      width: 100%;
+    }
+
+    .add-button {
+      margin-left: 20px;
+    }
+  }
+}
+
+

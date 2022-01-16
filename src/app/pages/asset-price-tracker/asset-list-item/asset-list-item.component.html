@@ -1,0 +1,14 @@
+<li class="list-item">
+  <div class="info">
+    <div class="isin">{{ isin }}</div>
+    <div class="price">
+      <ng-container *ngIf="price; else noPrice"> {{ price | currency: 'EUR' }}</ng-container>
+      <ng-template #noPrice>–</ng-template>
+    </div>
+  </div>
+  <app-icon-button
+    [icon]="faTimes"
+    (buttonClick)="remove.emit()"
+    ariaLabel="remove ISIN"
+  ></app-icon-button>
+</li>
