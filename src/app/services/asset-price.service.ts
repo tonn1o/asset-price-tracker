@@ -25,7 +25,7 @@ export class AssetPriceService {
   }
 
   // there's no topic provided to identify type of WS message, so we should check that the message contains `isin` and `price`
-  // so we can assume that that's asset price update message
+  // so we can assume that it is an asset price update message
   private isAssetPriceUpdateMessage(message: any): message is AssetPriceUpdateMessage {
     return message?.hasOwnProperty('isin') && message?.hasOwnProperty('price');
   }

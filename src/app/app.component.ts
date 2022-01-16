@@ -7,8 +7,6 @@ import { WebSocketService } from 'src/app/services/web-socket.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'trade-republic-tracker';
-
   constructor(private webSocketService: WebSocketService) {
     this.webSocketService.open();
   }
