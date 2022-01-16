@@ -23,7 +23,6 @@ RxJS: `v6.6.0`
 ## Q&A
 
 **What happens in case the websocket disconnects?**
-
 Normally, when websocket disconnects you will get `onclose` event with `code` which will indicate a reason of the disconnection.
 
 **How would you go further to keep the live data available or inform the user?**
